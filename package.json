@@ -1,0 +1,39 @@
+{
+    "name": "preload-all",
+    "version": "1.0.0",
+    "description": "Preload or Prefetch all \u0016resource for your web app,including im\\js\\css...",
+    "keywords": [
+        "preload",
+        "prefetch",
+        "preload img",
+        "preload-img",
+        "preload js",
+        "preload-js",
+        "preload css",
+        "preload-css",
+        "preload all",
+        "preload-all"
+    ],
+    "browser": "dist/preload-all.js",
+    "main": "dist/preload-all.js",
+    "scripts": {
+        "build": "rollup -c --environment NODE_ENV:production",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "devDependencies": {
+        "babel-preset-es2015": "^6.24.1",
+        "rollup-plugin-commonjs": "^9.2.0",
+        "rollup-plugin-node-resolve": "^4.0.0",
+        "rollup-plugin-terser": "^4.0.4"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/xkh/preload-all.git"
+    },
+    "author": "xkh",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/xkh/preload-all/issues"
+    },
+    "homepage": "https://github.com/xkh/preload-all#readme"
+}
