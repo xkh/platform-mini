@@ -22,9 +22,9 @@
     },
     "devDependencies": {
         "babel-preset-es2015": "^6.24.1",
-        "rollup-plugin-commonjs": "^9.2.0",
-        "rollup-plugin-node-resolve": "^4.0.0",
-        "rollup-plugin-terser": "^4.0.4"
+        "@rollup/plugin-commonjs": "^14.0.0",
+        "@rollup/plugin-node-resolve": "^8.4.0",
+        "rollup-plugin-terser": "^6.1.0"
     },
     "repository": {
         "type": "git",
