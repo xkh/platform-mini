@@ -9,16 +9,25 @@ English | [简体中文](./README_zh.md)
 
 # preload-all
 
-> Preload all resources，image、js、css...
+> Preload all resources，image、js、css... Super small size `1.7K`
 
 > Support multi-format resource loading and automatic suffix recognition. It is recommended to carry the value of type type to reduce the loading time.
 > return `Promise`, Usage examples adopt `.then .catch`, Of course you can use it`async await`.
 
 ## Install
 
-```
+```bash
 npm i preload-all --save
 ```
+
+## Options
+
+| param  | desc                                         | values          | type     | must |
+| ------ | -------------------------------------------- | --------------- | -------- | ---- |
+| links  | resource list                                | []              | string[] | yes  |
+| type   | resource type                                | image/js/css/'' | string   | no   |
+| ignore | Ignore loading exception resources           | true/false      | boolean  | no   |
+| retry  | Number of failed retries of resource loading | 0               | number   | no   |
 
 ## Usage
 
@@ -82,12 +91,3 @@ preloadAll({
     type: 'css'
 })
 ```
-
-## Options
-
-| param  | desc                                         | values          | type     | must |
-| ------ | -------------------------------------------- | --------------- | -------- | ---- |
-| links  | resource list                                | []              | string[] | yes  |
-| type   | resource type                                | image/js/css/'' | string   | no   |
-| ignore | Ignore loading exception resources           | true/false      | boolean  | no   |
-| retry  | Number of failed retries of resource loading | 0               | number   | no   |
