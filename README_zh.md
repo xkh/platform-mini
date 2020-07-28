@@ -5,6 +5,8 @@
  * @LastEditTime: 2020-07-27 19:30:19
 -->
 
+[English](./README.md) | 简体中文
+
 # preload-all
 
 > 预加载所有资源，image、js、css... 支持多格式资源同时加载自动后缀识别；推荐携带 type 类型值减少加载耗时；

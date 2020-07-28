@@ -5,6 +5,8 @@
  * @LastEditTime: 2020-07-27 19:11:27
 -->
 
+English | [简体中文](./README_zh.md)
+
 # preload-all
 
 > Preload all resources，image、js、css...
