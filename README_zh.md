@@ -14,7 +14,7 @@
 
 ## 安装
 
-```
+```bash
 npm i preload-all --save
 ```
 
@@ -22,13 +22,13 @@ npm i preload-all --save
 
 #### 引用
 
-```
+```bash
 import {preloadAll} from 'preload-all';
 ```
 
 #### 混合资源预加载
 
-```
+```bash
 preloadAll({
     links: [
         "https://xxx01.jpg",        //图片
@@ -36,20 +36,16 @@ preloadAll({
         "https://xxx03.css",        //css
     ],
     type: 'image'
-}).then(({success})=>{
-    if(success){
-        //所有资源加载完成
-    }else{
-        //资源加载异常
-    }
-}).catch(()=>{
+}).then((res)=>{
+    //所有资源加载完成
+}).catch((error)=>{
     //资源加载异常
 })
 ```
 
 #### 图片资源预加载
 
-```
+```bash
 preloadAll({
     links: [
         "https://xxx01.jpg",
@@ -61,7 +57,7 @@ preloadAll({
 
 #### Js 预加载
 
-```
+```bash
 preloadAll({
     links: [
         "https://xxx01.js",
@@ -74,7 +70,7 @@ preloadAll({
 
 #### Css 预加载
 
-```
+```bash
 preloadAll({
     links: [
         "https://xxx01.css",

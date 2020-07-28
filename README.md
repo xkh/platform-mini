@@ -37,13 +37,9 @@ preloadAll({
         "https://xxx02.js",         //Js
         "https://xxx03.css",        //Css
     ]
-}).then(({success})=>{
-    if(success){
-        //todo success
-    }else{
-        //todo fail
-    }
-}).catch(()=>{
+}).then((res)=>{
+    //todo success
+}).catch((error)=>{
     //todo fail
 })
 ```
