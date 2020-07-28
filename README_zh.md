@@ -9,17 +9,15 @@
 
 > 预加载所有资源，image、js、css...；
 > 支持多格式资源同时加载自动后缀识别；推荐携带 type 类型值减少加载耗时；
-> 返回`Promise`
+> 返回`Promise`，用法示例采用`.then().catch()`，当然也可以使用`async() await()`；
 
-### 安装
+## 安装
 
 ```
 npm i preload-all --save
 ```
 
-### 用法
-
-返回`Promise`，用法示例采用`.then().catch()`，当然也可以使用`async() await()`；
+## 用法
 
 #### 引用
 
@@ -27,14 +25,14 @@ npm i preload-all --save
 import {preloadAll} from 'preload-all';
 ```
 
-#### 图片预加载
+#### 混合资源预加载
 
 ```
 preloadAll({
     links: [
-        "https://xxx01.jpg",
-        "https://xxx02.png",
-        "https://xxx03.jpg",
+        "https://xxx01.jpg",        //图片
+        "https://xxx02.js",         //js
+        "https://xxx03.css",        //css
     ],
     type: 'image'
 }).then(({success})=>{
@@ -43,10 +41,24 @@ preloadAll({
     }else{
         //资源加载异常
     }
-}).catch(()=>{})
+}).catch(()=>{
+    //资源加载异常
+})
 ```
 
-#### js 预加载
+#### 图片资源预加载
+
+```
+preloadAll({
+    links: [
+        "https://xxx01.jpg",
+        "https://xxx02.png",
+        "https://xxx03.gif",
+    ],
+})
+```
+
+#### Js 预加载
 
 ```
 preloadAll({
@@ -59,7 +71,7 @@ preloadAll({
 })
 ```
 
-#### css 预加载
+#### Css 预加载
 
 ```
 preloadAll({
@@ -72,14 +84,11 @@ preloadAll({
 })
 ```
 
-### 混合资源预加载
+## 参数配置
 
-```
-preloadAll({
-    links: [
-        "https://xxx01.jpg",        //图片
-        "https://xxx02.js",         //js
-        "https://xxx03.css",        //css
-    ],
-})
-```
+| 参数   | 描述                           | 值              | 类型     | 是否必须 |
+| ------ | ------------------------------ | --------------- | -------- | -------- |
+| links  | 资源列表                       | []              | string[] | yes      |
+| type   | 资源类型（建议填写）           | image/js/css/'' | string   | no       |
+| ignore | 是否忽略加载异常的资源继续执行 | true/false      | boolean  | no       |
+| retry  | 资源加载异常重试几次           | 0               | number   | no       |

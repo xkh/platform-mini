@@ -7,48 +7,48 @@
 
 # preload-all
 
-> Preload all resources，image、js、css...；
-> Support multi-format resource loading and automatic suffix recognition;It is recommended to carry the value of type type to reduce the loading time.
-> return Promise
+> Preload all resources，image、js、css...
 
-### Install
+> Support multi-format resource loading and automatic suffix recognition. It is recommended to carry the value of type type to reduce the loading time.
+> return `Promise`, Usage examples adopt `.then .catch`, Of course you can use it`async await`.
+
+## Install
 
 ```
 npm i preload-all --save
 ```
 
-### Usage
+## Usage
 
-return `Promise`，Usage examples adopt `.then().catch()`，Of course you can use it`async() await()`；
+#### First
 
-#### Reference
-
-```
+```bash
 import {preloadAll} from 'preload-all';
 ```
 
-#### Preload image
+#### Preload all resource
 
-```
+```bash
 preloadAll({
     links: [
-        "https://xxx01.jpg",
-        "https://xxx02.png",
-        "https://xxx03.jpg",
-    ],
-    type: 'image'
+        "https://xxx01.jpg",        //Image
+        "https://xxx02.js",         //Js
+        "https://xxx03.css",        //Css
+    ]
 }).then(({success})=>{
     if(success){
-        //所有资源加载完成
+        //todo success
     }else{
-        //资源加载异常
+        //todo fail
     }
-}).catch(()=>{})
+}).catch(()=>{
+    //todo fail
+})
 ```
 
-#### Preload js
+#### Preload Js
 
-```
+```bash
 preloadAll({
     links: [
         "https://xxx01.js",
@@ -59,9 +59,22 @@ preloadAll({
 })
 ```
 
-#### Preload css
+#### Preload Image
 
+```bash
+preloadAll({
+    links: [
+        "https://xxx01.jpg",
+        "https://xxx02.png",
+        "https://xxx03.gif",
+    ],
+    type: 'js'
+})
 ```
+
+#### Preload Css
+
+```bash
 preloadAll({
     links: [
         "https://xxx01.css",
@@ -72,14 +85,11 @@ preloadAll({
 })
 ```
 
-### Preload all resource
+## Options
 
-```
-preloadAll({
-    links: [
-        "https://xxx01.jpg",        //图片
-        "https://xxx02.js",         //js
-        "https://xxx03.css",        //css
-    ],
-})
-```
+| param  | desc                                         | values          | type     | must |
+| ------ | -------------------------------------------- | --------------- | -------- | ---- |
+| links  | resource list                                | []              | string[] | yes  |
+| type   | resource type                                | image/js/css/'' | string   | no   |
+| ignore | Ignore loading exception resources           | true/false      | boolean  | no   |
+| retry  | Number of failed retries of resource loading | 0               | number   | no   |
