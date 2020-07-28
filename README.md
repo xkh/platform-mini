@@ -81,6 +81,5 @@ preloadAll({
         "https://xxx02.js",         //js
         "https://xxx03.css",        //css
     ],
-    type: 'css'
 })
 ```
