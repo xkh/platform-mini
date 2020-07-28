@@ -14,8 +14,8 @@
         "preload all",
         "preload-all"
     ],
-    "browser": "dist/preload-all.js",
-    "main": "dist/preload-all.js",
+    "browser": "lib/preload-all.js",
+    "main": "lib/preload-all.js",
     "scripts": {
         "build": "rollup -c --environment NODE_ENV:production",
         "test": "echo \"Error: no test specified\" && exit 1"
