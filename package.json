@@ -1,6 +1,6 @@
 {
     "name": "preload-all",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Preload or Prefetch all \u0016resource for your web app,including im\\js\\css...",
     "keywords": [
         "preload",
