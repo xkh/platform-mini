@@ -53,19 +53,6 @@ preloadAll({
 })
 ```
 
-#### Preload Js
-
-```bash
-preloadAll({
-    links: [
-        "https://xxx01.js",
-        "https://xxx02.js",
-        "https://xxx03.js",
-    ],
-    type: 'js'
-})
-```
-
 #### Preload Image
 
 ```bash
@@ -74,6 +61,19 @@ preloadAll({
         "https://xxx01.jpg",
         "https://xxx02.png",
         "https://xxx03.gif",
+    ],
+    type: 'image'
+})
+```
+
+#### Preload Js
+
+```bash
+preloadAll({
+    links: [
+        "https://xxx01.js",
+        "https://xxx02.js",
+        "https://xxx03.js",
     ],
     type: 'js'
 })

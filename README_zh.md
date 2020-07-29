@@ -44,7 +44,6 @@ preloadAll({
         "https://xxx02.js",         //js
         "https://xxx03.css",        //css
     ],
-    type: 'image'
 }).then((res)=>{
     //所有资源加载完成
 }).catch((error)=>{
@@ -61,6 +60,7 @@ preloadAll({
         "https://xxx02.png",
         "https://xxx03.gif",
     ],
+    type: 'image'
 })
 ```
 

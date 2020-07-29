@@ -1,5 +1,6 @@
 src/
 README_zh.md
+HISTORY.md
 package-lock.json
 rollup.config.js
 .gitignore
