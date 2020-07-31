@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!--
  * @Autor: xkh
  * @Date: 2020-07-27 18:55:19
@@ -91,3 +92,7 @@ preloadAll({
     type: 'css'
 })
 ```
+=======
+# js-npm-rollup
+npm打包模版
+>>>>>>> f9213c6c984ce71a5b42c66eed8bcb5da12bfcb7
