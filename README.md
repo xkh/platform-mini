@@ -5,11 +5,9 @@
  * @LastEditTime: 2020-07-31 20:50:28
 -->
 
-English | [简体中文](./README_zh.md)
-
 # platform-mini
 
-> 最轻量的解析 userAgent，得到必要的平台信息
+> 最轻量的解析`userAgent`,得到必要的平台信息,
 
 ## Install
 
@@ -22,5 +20,17 @@ npm i platform-mini --save
 #### First
 
 ```bash
+import {platform} from "platform-mini";
+
+platform = {
+    isAndroid: false,
+    isIos: true,
+    isIpad: false,
+    isIphone: true,
+    isMac: false,
+    isWeixin: false,
+    isWindows: false,
+    version: "13.2.3"
+}
 
 ```
