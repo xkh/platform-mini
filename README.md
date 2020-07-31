@@ -7,33 +7,20 @@
 
 English | [简体中文](./README_zh.md)
 
-# xxxx
+# platform-mini
 
-> 
+> 最轻量的解析 userAgent，得到必要的平台信息
 
 ## Install
 
 ```bash
-npm i xxxx --save
+npm i platform-mini --save
 ```
-
-## Options
-
-| param  | desc  | values          | type     | must |
-|   |  |              | number   | no   |
 
 ## Usage
 
 #### First
 
 ```bash
+
 ```
-
-#### Preload all resource
-
-```bash
-```
-
-=======
-# js-npm-rollup
-npm打包模版
