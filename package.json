@@ -1,21 +1,10 @@
 {
-    "name": "preload-all",
-    "version": "1.0.6",
+    "name": "tools-name",
+    "version": "1.0.0",
     "description": "Preload or Prefetch all \u0016resource for your web app,including im\\js\\css...",
-    "keywords": [
-        "preload",
-        "prefetch",
-        "preload img",
-        "preload-img",
-        "preload js",
-        "preload-js",
-        "preload css",
-        "preload-css",
-        "preload all",
-        "preload-all"
-    ],
-    "browser": "lib/preload-all.js",
-    "main": "lib/preload-all.js",
+    "keywords": [],
+    "browser": "lib/mian.js",
+    "main": "lib/mian.js",
     "scripts": {
         "build": "rollup -c --environment NODE_ENV:production",
         "test": "echo \"Error: no test specified\" && exit 1"
