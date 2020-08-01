@@ -2,7 +2,15 @@
     "name": "platform-mini",
     "version": "1.0.0",
     "description": "Preload or Prefetch all \u0016resource for your web app,including im\\js\\css...",
-    "keywords": [],
+    "keywords": [
+        "platform-mini",
+        "platform",
+        "platform-js",
+        "platform-light",
+        "platform-userAgent",
+        "userAgent-parser",
+        "ua-parser"
+    ],
     "browser": "lib/platform-mini.js",
     "main": "lib/platform-mini.js",
     "scripts": {

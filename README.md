@@ -7,7 +7,7 @@
 
 # platform-mini
 
-> 最轻量的解析`userAgent`,得到必要的平台信息,
+> 最轻量的解析 `userAgent`，得到必要的平台信息，大小 `746b` 不到 `1k`。😀
 
 ## Install
 
@@ -20,17 +20,17 @@ npm i platform-mini --save
 #### First
 
 ```bash
-import {platform} from "platform-mini";
+import { platform } from "platform-mini";
 
 platform = {
-    isAndroid: false,
-    isIos: true,
-    isIpad: false,
-    isIphone: true,
-    isMac: false,
-    isWeixin: false,
-    isWindows: false,
-    version: "13.2.3"
+    isAndroid: false,   //安卓系统
+    isIos: true,        //ios系统
+    isIpad: false,      //ipad
+    isIphone: true,     //ihpone
+    isMac: false,       //mac平台
+    isWindows: false,   //windows平台
+    isWeixin: false,    //微信
+    version: "13.2.3"   //系统版本号
 }
 
 ```
