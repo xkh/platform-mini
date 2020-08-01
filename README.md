@@ -17,8 +17,6 @@ npm i platform-mini --save
 
 ## Usage
 
-#### First
-
 ```bash
 import { platform } from "platform-mini";
 
