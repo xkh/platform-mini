@@ -1,3 +1,5 @@
+
+
 <!--
  * @Autor: xkh
  * @Date: 2020-07-27 18:55:19
@@ -24,7 +26,7 @@ platform = {
     isAndroid: false,   //安卓系统
     isIos: true,        //ios系统
     isIpad: false,      //ipad
-    isIphone: true,     //ihpone
+    isIphone: true,     //iphone
     isMac: false,       //mac平台
     isWindows: false,   //windows平台
     isWeixin: false,    //微信
